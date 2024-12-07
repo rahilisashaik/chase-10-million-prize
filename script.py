@@ -15,9 +15,8 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get('https://millionpoints.chase.com/?pg_name=entry')
 wait = WebDriverWait(driver, 10)
 
-time.sleep(15)
+time.sleep(10)
 
-# Locate the dropdown element
 dropdown = driver.find_element("id", "edit-field-card")
 select = Select(dropdown)
 select.select_by_visible_text("Ink Business Preferred®")
